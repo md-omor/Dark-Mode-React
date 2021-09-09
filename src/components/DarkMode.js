@@ -13,7 +13,7 @@ const DarkMode = () => {
     <div className={darkMode ? "dark_mode" : ""}>
       <div className="nav">
         <label className="switch">
-          <input type="checkbox" onChange={() => setdarkMode(!darkMode)} />
+          <input checked={darkMode} type="checkbox" onChange={() => setdarkMode(!darkMode)} />
           <span className="slider round"></span>
         </label>
       </div>
